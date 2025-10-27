@@ -1,0 +1,106 @@
+
+GOALS:
+Start to search and understand how would an EMS be implemntend in a Port 
+
+How can an EMS be appplied to a port ?
+
+Which APIs (External DATA) can we use for the EMS in question?
+- Meteo
+- Market Prices 
+- Localization Boats in Port
+- Incoming boats shedule ??
+- More Boats data 
+
+At the moment the data comes from 31 general (QUADROS)
+Data that's gonna be available soon - Solar Production and Electric Mobility 
+
+In the perspective of Dashboard, what are import indicators to monitored? 
+
+Forecast goal: What to produce? What is going to be consumed ?  What each boat consumes (depending on type of boat) ? 
+
+
+|||||||||||||||
+
+Understanding EMS Implementation in Ports
+Key frameworks to research:
+
+ISO 14001 - The standard framework most ports use
+PERS (Port Environmental Review System) - Specifically designed for ports by EcoPorts
+ESPO Green Guide - European Sea Ports Organisation best practices
+IMO/MARPOL regulations - International maritime environmental standards
+
+Look into case studies from ports like Rotterdam, Hamburg, Barcelona, and Singapore - they have mature EMS systems you can learn from.
+External APIs & Data Sources
+For your specific needs:
+Meteorological Data:
+
+IPMA (Instituto Português do Mar e da Atmosfera) - national weather service
+OpenWeatherMap API
+Copernicus Marine Service - EU marine data
+
+Vessel Tracking & Scheduling:
+
+MarineTraffic API - real-time vessel positions, schedules, vessel characteristics
+VesselFinder API - similar vessel tracking
+AIS (Automatic Identification System) data streams
+Port Authority's own systems (check what Funchal Port Authority/APRAM has)
+
+Market Prices:
+
+Energy prices: OMIE (Iberian electricity market)
+Fuel prices: Platts, Argus Media APIs
+Carbon pricing: EU ETS data
+
+Vessel Consumption Data:
+
+IMO's ship databases
+Vessel type classification systems (can help estimate consumption patterns)
+
+Critical Dashboard Indicators (KPIs)
+Based on your goals, consider monitoring:
+Environmental:
+
+Energy consumption (kWh) - total & by source
+CO2 emissions (direct + indirect)
+Water consumption
+Waste generated & recycled
+Air quality (NOx, SOx, PM)
+Noise levels
+
+Operational:
+
+Vessel calls by type (cruise, cargo, ferry, yacht)
+Berth occupancy rates
+Shore power connection rate
+Turnaround times
+
+Predictive/Forecast:
+
+Expected energy demand (based on incoming vessels)
+Solar production forecast vs. demand
+Peak consumption periods
+Vessel-specific consumption estimates
+
+Your "31 Quadros" (Tables/Dashboards)
+This existing data structure is valuable! You should:
+
+Map what environmental aspects each quadro currently covers
+Identify which align with ISO 14001 requirements
+Find gaps in environmental monitoring
+Plan how to integrate new data sources (solar, e-mobility)
+
+Forecasting Framework
+For your consumption prediction goals:
+
+Build a vessel typology database (cruise ships, container vessels, tankers, etc.)
+Estimate consumption by: vessel type + size + duration of stay + services used
+Factor in: seasonal patterns, shore power availability, weather conditions
+Use the incoming schedule to predict daily/weekly demand
+
+Next Steps I'd Recommend:
+
+Research existing port EMS implementations (focus on European ports similar to Funchal)
+Interview Funchal Port Authority about current data collection methods
+Map the 31 existing quadros to understand baseline data
+Prototype a simple API integration (start with weather or vessel tracking)
+Define priority KPIs with your team
