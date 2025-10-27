@@ -3,12 +3,35 @@
 
 Motivation
 
-Why we need energy managment systems in Ports? 
+KeyWords: ShorePower
+
+keyPoints
+Electrification of shipping 
+Reduce Emissions
+Electricity storage is essential
+
+Port "ecosystem" :
+On-site generation 
+Energy for vessel recharing & Shore Powering
+On-site facilities
+
+
+General Question:
+
+Why we need energy managment systems in Ports? Benefits? 
+What are looking for with this sytems ? 
 What are the problems we can fix with their implemtation?
-What are the difference between a general EMS and one specific related with port and vessels
-If i work in a port what are the concerns ? ( Maybe general )
-What information do we need? is there any boat? what type of boat? Are we accounting for more boats?
-What type of machines is used in a port? Do we need to keep in account~those ? 
-Are we producing only for to feed vessels or we have a direct contact with the island grid ? 
-What are usualy the type of vessels that the Port takes? 
+What are the key differences between a general EMS and one specific related with port and vessels
+What are the main consumers of electricity on a port? 
+
+More specific:
+
+Type of boat docked ? (we will have diferrent energy consupmtion if its a small cruise or big ....)
+How much % energy required for each boat in average? How much it represents from the total Madeira energy demand? (Estimates given data from madeira and boat files/documents for now)
+
+
+Prevision Wise:
+
+Are we accounting for more boats in the next hour? Which API gets me that info ?
+
 
