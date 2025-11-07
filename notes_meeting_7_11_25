@@ -1,1 +1,16 @@
+Notes meeting 7 november 
+
+Understand better the how to apply the EMS in a Port 
+
+1. what type of port are we working with - mainly cruise ships docked
+2. challanges of the port - manging load for many cruise ships at the same time? Have fast response to demand? 
+knowing how many people are on the cruise ships estimate expenduture minimal and max ? 
+Utilize BESS to sustain or stabilize demand. If there is a constant nominal usage of power and then some fluctuations, BESS can take care of fluctuations
+
+
+Type of DATA APIs that are important to us 
+Information before hand on the vessels coming - type of boat, type of power connection, people capacity  
+Information on the weather and coast alerts 
+Information on the energy price market 
+
 
